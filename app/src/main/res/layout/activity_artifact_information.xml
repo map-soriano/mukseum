@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_dark"
+    android:padding="32dp">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/manage_artifacts_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:contentDescription="@string/manage_or_edit_artifacts"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/artifact_name_text_view"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/artifact_image_view"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="16dp"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/view_comments_button"
+        app:layout_constraintStart_toEndOf="@+id/artifact_information_cancel_button"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/artifact_name_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        android:scrollbars="vertical"
+        android:textColor="@color/white_2"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/manage_artifacts_button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artifact_image_view"
+        tools:text="@string/lorem_shortest" />
+
+    <TextView
+        android:id="@+id/artifact_owner_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white_2"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/artifact_name_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/artifact_name_text_view"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/lorem_shortest" />
+
+    <TextView
+        android:id="@+id/artifact_description_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/comments_background"
+        android:maxLines="12"
+        android:padding="16dp"
+        android:scrollbars="vertical"
+        android:textAlignment="viewStart"
+        android:textColor="@color/blue_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artifact_owner_text_view"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/lorem_long" />
+
+    <TextView
+        android:id="@+id/artifact_tags_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:scrollbars="vertical"
+        android:textColor="@color/white_2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artifact_description_text_view"
+        tools:text="@string/lorem_short" />
+
+    <ImageButton
+        android:id="@+id/artifact_information_cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:contentDescription="@string/cancel_button"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <ImageButton
+        android:id="@+id/did_you_know_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:contentDescription="@string/did_you_know_button"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@+id/artifact_tags_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/artifact_tags_text_view"
+        app:srcCompat="@android:drawable/ic_dialog_info"
+        app:tint="@color/dirty_white" />
+
+    <TextView
+        android:id="@+id/artifact_did_you_know_text_view"
+        android:layout_width="286.5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:maxLines="1"
+        android:scrollbars="vertical"
+        android:textColor="@color/dirty_white"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/did_you_know_button"
+        app:layout_constraintStart_toEndOf="@+id/did_you_know_button"
+        app:layout_constraintTop_toTopOf="@+id/did_you_know_button"
+        tools:text="@string/did_you_know"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/view_comments_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:contentDescription="@string/view_comments_button"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/stat_notify_chat" />
+
+    <ImageButton
+        android:id="@+id/add_favorites_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:clickable="false"
+        android:contentDescription="@string/add_to_favorites"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_comments_button"
+        app:srcCompat="@android:drawable/btn_star_big_off"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/delete_artifact_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:clickable="false"
+        android:contentDescription="@string/delete_artifact"
+        android:scaleType="centerCrop"
+        android:tintMode="multiply"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artifact_information_cancel_button"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        app:tint="#F44336"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
