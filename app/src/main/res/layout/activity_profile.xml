@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_dark"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@drawable/comments_background"
+        android:orientation="vertical"
+        android:padding="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/profile_role_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/blue_dark_hint"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:text="User Role" />
+
+        <TextView
+            android:id="@+id/profile_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_dark"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            tools:text="User Name" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/profile_view_comments_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        android:clickable="false"
+        android:contentDescription="@string/view_comments_button"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@android:drawable/stat_notify_chat"
+        app:tint="@color/dirty_white"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/manage_curators_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:clickable="false"
+        android:contentDescription="@string/view_curator_application_list"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/profile_view_comments_button"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@android:drawable/sym_action_email"
+        app:tint="@color/white"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/profile_cancel_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:contentDescription="@string/cancel_button"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/manage_curators_button"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        app:tint="@color/white_2" />
+
+    <ImageButton
+        android:id="@+id/profile_refresh_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:contentDescription="@string/cancel_button"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/profile_cancel_button"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@android:drawable/ic_popup_sync"
+        app:tint="@color/white_2" />
+
+    <TextView
+        android:id="@+id/profile_favorites_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/favorites"
+        android:textColor="@color/dirty_white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageView
+        android:id="@+id/profile_favorites_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toEndOf="@+id/profile_favorites_text_view"
+        app:layout_constraintTop_toTopOf="@+id/profile_favorites_text_view"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profile_favorites_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/comments_background"
+        android:backgroundTint="@color/shade"
+        android:contentDescription="@string/favorites_recycler_view"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_favorites_text_view">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/profile_artifacts_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/artifacts"
+        android:textColor="@color/dirty_white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_favorites_recycler_view"
+        tools:visibility="visible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/profile_artifacts_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/comments_background"
+        android:backgroundTint="@color/shade"
+        android:clickable="false"
+        android:padding="16dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_artifacts_text_view"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
