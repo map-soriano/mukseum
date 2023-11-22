@@ -16,11 +16,11 @@ Welcome to the debug pre-release of **Mukseum**! I'm excited to introduce you to
 
 - **User Profiles:** Create your profile, showcase your own artifacts, and connect with fellow enthusiasts.
 
-- **Social Interaction:** Save, comment, and even put a star your favorite artifacts, and engage in conversations with fellow users.
+- **Social Interaction:** Save, comment, and even put a star on your favorite artifacts, and engage in conversations with fellow users.
 
 - **Curator Uploads:** Approved curators can easily upload and curate their own galleries, adding a personal touch to each collection.
 
-- **Discover New Treasures:** Use our discovery tools to find hidden gems and discover artifacts you'll love.
+- **Discover New Treasures:** Use this app to find hidden gems and discover artifacts you'll love.
 
 ## 🗒️ Notes
 🚧 **Developmental Phase:**
