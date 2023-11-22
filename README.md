@@ -1,8 +1,14 @@
 # Mukseum
 
+
+
+https://github.com/map-soriano/mukseum/assets/68729612/d131a299-9438-4311-aa72-af82a1074c43
+
+
+
 ## 🖼️ About
 
-Welcome to the debug release of **Mukseum**! I'm excited to introduce you to my social media gallery where people come together to share and discover an incredible array of artifacts.
+Welcome to the debug pre-release of **Mukseum**! I'm excited to introduce you to my social media gallery where people come together to share and discover an incredible array of artifacts.
 
 ## 🧩 Key Features
 
@@ -17,8 +23,8 @@ Welcome to the debug release of **Mukseum**! I'm excited to introduce you to my 
 - **Discover New Treasures:** Use our discovery tools to find hidden gems and discover artifacts you'll love.
 
 ## 🗒️ Notes
-🚧 **Early Access Phase:**
-Please note that this release is in the developmental phase which means you're getting a sneak peek at my app's development. I encourage you to explore, provide feedback, and help me make Mukseum even better!
+🚧 **Developmental Phase:**
+Please note that this pre-release is in the developmental phase which means you're getting a sneak peek at my app's development. I encourage you to explore, provide feedback, and help me make Mukseum even better!
 
 💡 **Feedback and Support:**
 Your feedback is invaluable to me! If you encounter any issues, have suggestions, or want to report a bug, please feel free to reach out to me. I appreciate your input in shaping the future of Mukseum.
