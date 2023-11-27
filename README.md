@@ -33,3 +33,7 @@ Your feedback is invaluable to us! If you encounter any issues, have suggestions
 Ready to embark on this exciting journey? Download Mukseum now and start exploring the world of artifacts!
 
 Thank you for being a part of our debug release. Together, we'll create a vibrant community of artifact enthusiasts.
+
+## 🛠️ Built With
+
+<img src="https://skillicons.dev/icons?i=kotlin,firebase,androidstudio" alt="Tools used for building the Mukseum">
